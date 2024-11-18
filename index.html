@@ -2,8 +2,9 @@
 <html lang="en-ca">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 3: Personal Website Design and Implementation</title>
-    <!-- Made by: Annika Zamora, 21075753-->
+    
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,9 +16,10 @@
       #test
       
       #container {
-        width: 1366 px;
+        width: 1024 px;
         height: 768 px;
-        background-color: #9cb384; 
+        background-color: #f2f0e6; 
+        
       }
       
       /** Annika's Kitchen Journal Title **/
@@ -27,6 +29,7 @@
         font-family: "Playfair Display"; 
         font-weight: 400;
         font-style: normal;
+        
       }
       
       /** Subheadings **/
@@ -44,6 +47,32 @@
         font-style: normal;
       }
       
+      ul {
+        list-style-type: none;
+        overflow: hidden;
+        display: flex;
+        margin: 0px;
+      }
+      
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      
+      li {
+        width: 90px;
+       
+        text-align: center;
+        padding: 5px 20px;
+        background-color: #d9d5c5;
+        
+        
+      }
+      
+      li:hover {
+        background-color: #c4bfab;
+      }
+      
       
     </style>
     
@@ -52,7 +81,7 @@
   <body>
     <div id="container">
      <h1>
-       Annika's Kitchen Journal
+       <a href="https://annikazamora.github.io/assignment3/">Annika's Kitchen Journal</a>
       </h1>
       
       <h2>
@@ -62,6 +91,16 @@
       <p>
         text 
       </p>
+      
+    
+    <!-- Navigation Bar -->
+    <ul>
+      <li><a href="linkgoeshere">Breakfast</a></li>
+      <li><a href="linkgoeshere">Lunch/Dinner</a></li>
+      <li><a href="linkgoeshere">Snacks</a></li>
+      <li><a href="linkgoeshere">About</a></li>
+      <li><a href="https://www.allrecipes.com/" target="_blank">More Recipes</a></li>
+    </ul>
       
     </div>
       
