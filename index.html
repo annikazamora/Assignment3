@@ -13,14 +13,23 @@
     
     <style>
       #container,
-      #test
+      #rightSection
       
       #container {
         width: 1024 px;
         height: 768 px;
         background-color: #f2f0e6; 
-        
       }
+      
+      .rightSection {
+        float: middle;
+        width: 96%; 
+        padding-left: 20px; 
+        padding-top: 5px;
+        padding-bottom: 20px;
+        margin-right: 10px;
+      }
+      
       
       /** Annika's Food Journal Title **/
       h1 {
@@ -79,7 +88,24 @@
       
       img {
         width: 400px;
+        float: left;
+        overflow: hidden;
+        padding-right: 20px;
       }
+      
+      table {
+        width: 56%;
+        float: middle;
+        overflow: hidden;
+        border: 1px solid black;
+      }
+      
+      th, td {
+        overflow: hidden;
+        border: 1px solid black;
+        text-align: center;
+      }
+      
       
       
     </style>
@@ -105,14 +131,70 @@
     </ul>
       
       <h2>
-        I Rate Food
+        I Rate Food!
       </h2>
       
-      <p>
-         
-      </p>
-      
       <img src="annika.jpg" alt="annika eating spaghetti">
+      
+      <div id="rightSection">
+        
+        <h2>
+          Conversion Rates
+        </h2>
+        
+        <p>
+          Since multiple foods are in different currencies, a conversion rate of all currencies mentioned will help provide more context when comparing the ratings.
+        </p>
+        
+        <p>
+          (Current exchange rates as of December 2024)
+        </p>
+        
+        <table>
+          <tr>
+            <th>Canadian Dollar (CAD$)</th>
+            <th>American Dollar (USD$)</th>
+            <th>British Pound (GBP£)</th>
+          </tr>
+          
+          <tr>
+            <td>$1</td>
+            <td>$0.71</td>
+            <td>£0.56</td>
+          </tr>
+          
+          <tr>
+            <td>$5</td>
+            <td>$3.56</td>
+            <td>£2.81</td>
+          </tr>
+          
+          <tr>
+            <td>$10</td>
+            <td>$7.12</td>
+            <td>£5.63</td>
+          </tr>
+          
+          <tr>
+            <td>$20</td>
+            <td>$14.24</td>
+            <td>£11.25</td>
+          </tr>
+          
+          <tr>
+            <td>$30</td>
+            <td>$21.36</td>
+            <td>£16.88</td>
+          </tr>
+          
+          <tr>
+            <td>$50</td>
+            <td>$35.60</td>
+            <td>£28.13</td>
+          </tr>
+        </table>
+        
+      </div>
       
     </div>
       
