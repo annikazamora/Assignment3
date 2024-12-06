@@ -13,37 +13,33 @@
     
     <style>
       #container,
-      #rightSection,
-      #leftSection
+      #section,
+      #rightText,
+      #test
       
-      .container {
+      #container {
         background-color: #f2f0e6; 
         padding: 20px;
         padding-top: 0px;
-        padding-bottom: 20px;
-      
         border: 2px solid black;
       }
       
-      .rightSection {
-        float: middle;
-        height: 100%;
-        
-        padding-left: 20px; 
-        padding-top: 5px;
-        margin-right: 10px;
-        
-        background-color: red;
+      .section {
+        width: 100%;
+        height: 640px;
+        margin: 20px;
       }
       
-      .leftSection {
-        height: 100%;
-        width: 30%;
-        background-color: blue;
-        float: left;
+      .rightText {
+        float: middle;
+        width: 96%; 
+        padding-left: 20px; 
+        padding-top: 5px;
+        padding-bottom: 20px;
+        margin-right: 10px;
         
+      
       }
- 
       
       /** Annika's Food Journal Title **/
       h1 {
@@ -61,6 +57,14 @@
         font-size: 25px;
         font-family: "Playfair Display";
         font-weight: 400;
+        font-style: normal;
+      }
+      
+      /** Smaller Titles for Each Location/Restaurant **/
+      h3 {
+        font-size: 20px;
+        font-family: "Playfair Display";
+        font-weight: 500;
         font-style: normal;
       }
       
@@ -102,17 +106,17 @@
       
       img {
         width: 400px;
-        
-       
-        
-        
+        float: left;
+        overflow: hidden;
+        padding-right: 50px;
       }
       
-      table {
+       table {
         width: 56%;
         float: middle;
         overflow: hidden;
         border: 1px solid black;
+       
       }
       
       th, td {
@@ -120,8 +124,6 @@
         border: 1px solid black;
         text-align: center;
       }
-      
-      
       
     </style>
     
@@ -141,42 +143,32 @@
       <li><a href="https://annikazamora.github.io/a3-page1/">Breakfast</a></li>
       <li><a href="https://annikazamora.github.io/a3-page2/">Lunch/Dinner</a></li>
       <li><a href="https://annikazamora.github.io/a3-page3/">Snacks</a></li>
-      <li><a href="https://annikazamora.github.io/a3-about-contact-page/">About</a></li>
+      <li><a href="https://annikazamora.github.io/a3-about-contact-page/">About/Contact</a></li>
+  
     </ul>
       
-      <div class="leftSection">
-        <h2>
-        Welcome! I Rate Food! 
+      <h2>
+      Welcome! I rate food!
       </h2>
-        
+      
+      <div class="section">
         <img src="annika.jpg" alt="annika eating spaghetti">
-      </div>
-      
-        
-        
-        
-    
-      
-      
-      
-      
-      
-      <div class="rightSection">
-        
-        <h2>
-          <br>
-          Conversion Rates
-        </h2>
-        
-        <p>
-          Since multiple foods are in different currencies, a conversion rate of all currencies mentioned will help provide more context when comparing the ratings. <br>
-        </p>
-        
-        <p>
-          (Current exchange rates as of December 2024)
-        </p>
-        
-        <table>
+
+          <div class="rightText">
+          <h2>
+            Conversion Rates
+          </h2>
+
+          <p>
+            Since multiple foods are in different currencies, a conversion rate of all currencies mentioned will help provide more context when comparing the ratings.
+          </p>
+
+          <p>
+            (Current exchange rates as of December 2024)
+          </p>
+
+          
+            <table>
           <tr>
             <th>Canadian Dollar (CAD $)</th>
             <th>American Dollar (USD $)</th>
@@ -226,15 +218,15 @@
             <td>€33.93</td>
           </tr>
         </table>
-        
-      
-      
-      <p>
-        <a href="https://www.xe.com/currencyconverter/" target="_blank"> <u>Click here to access a currency converter!!!!!!!!!!</u></a>
-      </p>
-        
+            
+          <p>
+            <a href="https://www.xe.com/currencyconverter/" target="_blank"> <u>Click here to access a currency converter</u></a>
+          </p>
+        </div>
       </div>
     </div>
+    
+    
       
   </body>
 
